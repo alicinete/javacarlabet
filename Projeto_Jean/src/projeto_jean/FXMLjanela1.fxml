@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projeto_jean.FXMLjanela1Controller">
+   <children>
+      <TabPane layoutX="-1.0" prefHeight="401.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+            <Tab text="Informação do  cliente">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fx:id="imgcliente" fitHeight="156.0" fitWidth="181.0" layoutX="29.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@fotoperfilgenerica.jpg" />
+                           </image></ImageView>
+                        <TextField fx:id="telefone" layoutX="311.0" layoutY="88.0" prefHeight="26.0" prefWidth="265.0" />
+                        <TextField editable="false" layoutX="210.0" layoutY="36.0" prefHeight="26.0" prefWidth="100.0" text="Nome:" />
+                        <TextField editable="false" layoutX="210.0" layoutY="62.0" prefHeight="26.0" prefWidth="100.0" text="Idade:" />
+                        <TextField fx:id="email" layoutX="311.0" layoutY="114.0" prefHeight="26.0" prefWidth="265.0" />
+                        <TextField editable="false" layoutX="210.0" layoutY="88.0" prefHeight="26.0" prefWidth="100.0" text="Telefone:" />
+                        <TextField fx:id="sessaoatual" layoutX="311.0" layoutY="140.0" prefHeight="26.0" prefWidth="265.0" />
+                        <TextField fx:id="proximasessao" layoutX="311.0" layoutY="166.0" prefHeight="26.0" prefWidth="265.0" />
+                        <TextField editable="false" layoutX="210.0" layoutY="114.0" prefHeight="26.0" prefWidth="100.0" text="Email:" />
+                        <TextField editable="false" layoutX="210.0" layoutY="140.0" prefHeight="26.0" prefWidth="100.0" text="Sessão atual:" />
+                        <TextField editable="false" layoutX="210.0" layoutY="166.0" prefHeight="26.0" prefWidth="100.0" text="Próxima Sessão:" />
+                        <TextField fx:id="nome" layoutX="311.0" layoutY="36.0" prefHeight="26.0" prefWidth="265.0" />
+                        <TextField fx:id="idade" layoutX="311.0" layoutY="62.0" prefHeight="26.0" prefWidth="265.0" />
+                        <Button fx:id="buttonconfirmar" layoutX="213.0" layoutY="265.0" mnemonicParsing="false" onAction="#confirmar" prefHeight="51.0" prefWidth="175.0" text="Confirmar" />
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Fototipo">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <CheckBox fx:id="fototipo1" layoutX="61.0" layoutY="33.0" mnemonicParsing="false" text="I" />
+                        <CheckBox fx:id="fototipo2" layoutX="246.0" layoutY="33.0" mnemonicParsing="false" text="II" />
+                        <CheckBox fx:id="fototipo3" layoutX="437.0" layoutY="33.0" mnemonicParsing="false" text="III" />
+                        <CheckBox fx:id="fototipo6" layoutX="437.0" layoutY="204.0" mnemonicParsing="false" text="VI" />
+                        <CheckBox fx:id="fototipo5" layoutX="246.0" layoutY="204.0" mnemonicParsing="false" text="V" />
+                        <CheckBox fx:id="fototipo4" layoutX="61.0" layoutY="204.0" mnemonicParsing="false" text="IV" />
+                        <ImageView fitHeight="129.0" fitWidth="150.0" layoutX="35.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@fototipo1.png" />
+                           </image></ImageView>
+                        <ImageView fitHeight="129.0" fitWidth="150.0" layoutX="208.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@fototipo2.png" />
+                           </image></ImageView>
+                        <ImageView fitHeight="129.0" fitWidth="150.0" layoutX="410.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@fototipo3.png" />
+                           </image></ImageView>
+                        <ImageView fitHeight="129.0" fitWidth="150.0" layoutX="410.0" layoutY="229.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@fototipo6.png" />
+                           </image></ImageView>
+                        <ImageView fitHeight="129.0" fitWidth="150.0" layoutX="208.0" layoutY="229.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@fototipo5.png" />
+                           </image></ImageView>
+                        <ImageView fitHeight="129.0" fitWidth="150.0" layoutX="33.0" layoutY="229.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@fototipo4.png" />
+                           </image></ImageView>
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Tipos de Tratamento">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <CheckBox fx:id="manchas" layoutX="403.0" layoutY="186.0" mnemonicParsing="false" text="Manchas" />
+                        <CheckBox fx:id="rugasfinas" layoutX="77.0" layoutY="14.0" mnemonicParsing="false" text="Rugas Finas" />
+                        <CheckBox fx:id="depilacao" layoutX="82.0" layoutY="186.0" mnemonicParsing="false" text="Depilação" />
+                        <CheckBox fx:id="telangiectacias" layoutX="387.0" layoutY="14.0" mnemonicParsing="false" text="Telangiectasias" />
+                        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="43.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@rugas.jpg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="351.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@telangiectasias.jpg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="43.0" layoutY="211.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Depilacao.jpg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="150.0" fitWidth="157.0" layoutX="391.0" layoutY="211.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@manchas.jpg" />
+                           </image>
+                        </ImageView>
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Região">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <CheckBox fx:id="abdomem" layoutX="72.0" layoutY="130.0" mnemonicParsing="false" />
+                        <CheckBox fx:id="peito" layoutX="72.0" layoutY="70.0" mnemonicParsing="false" />
+                        <CheckBox fx:id="pescoco" layoutX="508.0" layoutY="37.0" mnemonicParsing="false" text="Pescoço" />
+                        <CheckBox fx:id="rosto" layoutX="72.0" layoutY="46.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="11.0" />
+                        <CheckBox fx:id="coxas" layoutX="72.0" layoutY="227.0" mnemonicParsing="false" />
+                        <CheckBox fx:id="mao" layoutX="508.0" layoutY="165.0" mnemonicParsing="false" text="Mão" />
+                        <CheckBox fx:id="antebraco" layoutX="508.0" layoutY="110.0" mnemonicParsing="false" text="Antebraço" />
+                        <CheckBox fx:id="braco" layoutX="508.0" layoutY="138.0" mnemonicParsing="false" text="Braço" />
+                        <CheckBox fx:id="panturrilha" layoutX="508.0" layoutY="279.0" mnemonicParsing="false" text="Panturrilha" />
+                        <CheckBox fx:id="pe" layoutX="72.0" layoutY="335.0" mnemonicParsing="false" />
+                        <ImageView fitHeight="364.0" fitWidth="388.0" layoutX="106.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@corpo.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="14.0" layoutY="130.0" text="Abdomem" />
+                        <Label layoutX="38.0" layoutY="46.0" text="Rosto" />
+                        <Label layoutX="40.0" layoutY="71.0" text="Peito" />
+                        <CheckBox fx:id="costas" layoutX="508.0" layoutY="79.0" mnemonicParsing="false" text="Costas" />
+                        <Label layoutX="29.0" layoutY="227.0" text="Coxas" />
+                        <Label layoutX="45.0" layoutY="335.0" text="Pé" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

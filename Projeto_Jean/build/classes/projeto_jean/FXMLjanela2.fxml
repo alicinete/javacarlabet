@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="356.0" prefWidth="482.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projeto_jean.FXMLjanela2Controller">
+   <children>
+      <ImageView fx:id="imgjanela2" fitHeight="128.0" fitWidth="167.0" layoutX="14.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@fotoperfilgenerica.jpg" />
+         </image>
+      </ImageView>
+      <TextArea fx:id="infojanela2" editable="false" layoutX="181.0" layoutY="50.0" prefHeight="113.0" prefWidth="273.0" />
+      <Button layoutX="31.0" layoutY="277.0" mnemonicParsing="false" text="Iniciar sessão" />
+      <TextFlow fx:id="tempo" layoutX="181.0" layoutY="229.0" prefHeight="49.0" prefWidth="252.0" />
+      <ProgressBar fx:id="barradeprogresso" layoutX="181.0" layoutY="289.0" prefHeight="18.0" prefWidth="252.0" progress="0.0" />
+   </children>
+</AnchorPane>
