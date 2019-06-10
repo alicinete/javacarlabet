@@ -1,23 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
 <?import javafx.scene.image.*?>
 <?import java.lang.*?>
+<?import java.net.*?>
 <?import java.util.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
 <AnchorPane id="AnchorPane" prefHeight="341.0" prefWidth="468.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projeto_jean.FXMLDocumentController">
+    <stylesheets>
+        <URL value="@fxml.css" />
+    </stylesheets>
     <children>
-        <Button fx:id="buttoncadastro" layoutX="343.0" layoutY="286.0" onAction="#novocadastro" prefHeight="25.0" prefWidth="100.0" text="novo cadastro" />
+        <Button fx:id="buttoncadastro" layoutX="343.0" layoutY="286.0" onAction="#novocadastro" prefHeight="33.0" prefWidth="120.0" text="Novo Cadastro" />
         <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
-      <ImageView fx:id="fotoinicial" fitHeight="105.0" fitWidth="141.0" layoutX="23.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="fotoinicial" fitHeight="100.0" fitWidth="149.0" layoutX="11.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@fotoperfilgenerica.jpg" />
          </image></ImageView>
-      <TextField fx:id="info" editable="false" layoutX="164.0" layoutY="14.0" prefHeight="95.0" prefWidth="172.0" />
-      <Button fx:id="buttoneditar" layoutX="343.0" layoutY="24.0" mnemonicParsing="false" onAction="#editardados" prefHeight="25.0" prefWidth="100.0" text="editar dados" />
-      <Button fx:id="buttonsessao" layoutX="345.0" layoutY="87.0" mnemonicParsing="false" onAction="#iniciarsessao" prefHeight="25.0" prefWidth="100.0" text="iniciar sessão" />
-      <ComboBox fx:id="buscarnome" layoutX="19.0" layoutY="129.0"  prefWidth="150.0" />
+      <Button fx:id="buttoneditar" layoutX="208.0" layoutY="231.0" mnemonicParsing="false" onAction="#editardados" prefHeight="33.0" prefWidth="120.0" text="Editar dados" />
+      <Button fx:id="buttonsessao" layoutX="343.0" layoutY="231.0" mnemonicParsing="false" onAction="#iniciarsessao" prefHeight="33.0" prefWidth="120.0" text="Iniciar Sessão">
+         <font>
+            <Font size="10.0" />
+         </font></Button>
+      <ComboBox fx:id="buscarnome" layoutX="10.0" layoutY="138.0" onAction="#listanome" prefWidth="150.0" />
+      <TextField fx:id="nomeinicial" layoutX="238.0" layoutY="25.0" prefHeight="25.0" prefWidth="187.0" />
+      <TextField fx:id="telefoneinicial" layoutX="238.0" layoutY="50.0" prefHeight="25.0" prefWidth="187.0" />
+      <TextField fx:id="emailinicial" layoutX="238.0" layoutY="75.0" prefHeight="25.0" prefWidth="187.0" />
+      <TextField fx:id="idadeinicial" layoutX="238.0" layoutY="100.0" prefHeight="25.0" prefWidth="187.0" />
+      <Button fx:id="buttonexcluir" layoutX="208.0" layoutY="286.0" mnemonicParsing="false" onAction="#excluircliente" prefHeight="33.0" prefWidth="120.0" text="Excluir Cliente" />
+      <Label layoutX="181.0" layoutY="30.0" text="Nome:" />
+      <Label layoutX="181.0" layoutY="55.0" text="Telefone:" />
+      <Label layoutX="181.0" layoutY="80.0" text="Email:" />
+      <Label layoutX="181.0" layoutY="105.0" text="Idade:" />
     </children>
+    
 </AnchorPane>

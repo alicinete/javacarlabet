@@ -2,13 +2,17 @@
 
 <?import javafx.scene.image.*?>
 <?import java.lang.*?>
+<?import java.net.*?>
 <?import java.util.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projeto_jean.FXMLjanela1Controller">
-   <children>
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projeto_jean.FXMLjanela1Controller">
+   <stylesheets>
+        <URL value="@fxml.css" />
+    </stylesheets>
+    <children>
       <TabPane layoutX="-1.0" prefHeight="401.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
         <tabs>
             <Tab text="Informação do  cliente">
@@ -19,19 +23,19 @@
                            <image>
                               <Image url="@fotoperfilgenerica.jpg" />
                            </image></ImageView>
-                        <TextField fx:id="telefone" layoutX="311.0" layoutY="88.0" prefHeight="26.0" prefWidth="265.0" />
-                        <TextField editable="false" layoutX="210.0" layoutY="36.0" prefHeight="26.0" prefWidth="100.0" text="Nome:" />
-                        <TextField editable="false" layoutX="210.0" layoutY="62.0" prefHeight="26.0" prefWidth="100.0" text="Idade:" />
-                        <TextField fx:id="email" layoutX="311.0" layoutY="114.0" prefHeight="26.0" prefWidth="265.0" />
-                        <TextField editable="false" layoutX="210.0" layoutY="88.0" prefHeight="26.0" prefWidth="100.0" text="Telefone:" />
-                        <TextField fx:id="sessaoatual" layoutX="311.0" layoutY="140.0" prefHeight="26.0" prefWidth="265.0" />
-                        <TextField fx:id="proximasessao" layoutX="311.0" layoutY="166.0" prefHeight="26.0" prefWidth="265.0" />
-                        <TextField editable="false" layoutX="210.0" layoutY="114.0" prefHeight="26.0" prefWidth="100.0" text="Email:" />
-                        <TextField editable="false" layoutX="210.0" layoutY="140.0" prefHeight="26.0" prefWidth="100.0" text="Sessão atual:" />
-                        <TextField editable="false" layoutX="210.0" layoutY="166.0" prefHeight="26.0" prefWidth="100.0" text="Próxima Sessão:" />
-                        <TextField fx:id="nome" layoutX="311.0" layoutY="36.0" prefHeight="26.0" prefWidth="265.0" />
-                        <TextField fx:id="idade" layoutX="311.0" layoutY="62.0" prefHeight="26.0" prefWidth="265.0" />
+                        <TextField fx:id="telefone" layoutX="350.0" layoutY="80.0" prefHeight="25.0" prefWidth="230.0" />
+                        <TextField fx:id="email" layoutX="350.0" layoutY="105.0" prefHeight="25.0" prefWidth="230.0" />
+                        <DatePicker fx:id="sessaoatual" layoutX="350.0" layoutY="130.0" prefHeight="25.0" prefWidth="230.0" />
+                        <DatePicker fx:id="proximasessao" layoutX="350.0" layoutY="155.0" prefHeight="25.0" prefWidth="230.0" />
+                        <TextField fx:id="nome" layoutX="350.0" layoutY="30.0" prefHeight="25.0" prefWidth="230.0" />
+                        <TextField fx:id="idade" layoutX="350.0" layoutY="55.0" prefHeight="25.0" prefWidth="230.0" />
                         <Button fx:id="buttonconfirmar" layoutX="213.0" layoutY="265.0" mnemonicParsing="false" onAction="#confirmar" prefHeight="51.0" prefWidth="175.0" text="Confirmar" />
+                        <Label layoutX="240.0" layoutY="35.0" text="Nome:" />
+                        <Label layoutX="240.0" layoutY="60.0" text="Idade:" />
+                        <Label layoutX="240.0" layoutY="85.0" text="Telefone:" />
+                        <Label layoutX="240.0" layoutY="110.0" text="Email:" />
+                        <Label layoutX="240.0" layoutY="135.0" text="Sessão Atual:" />
+                        <Label layoutX="240.0" layoutY="160.0" text="Próxima Sessão:" />
                      </children></AnchorPane>
               </content>
             </Tab>
@@ -77,9 +81,9 @@
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
                         <CheckBox fx:id="manchas" layoutX="403.0" layoutY="186.0" mnemonicParsing="false" text="Manchas" />
-                        <CheckBox fx:id="rugasfinas" layoutX="77.0" layoutY="14.0" mnemonicParsing="false" text="Rugas Finas" />
+                        <CheckBox fx:id="rugasfinas" layoutX="77.0" layoutY="10.0" mnemonicParsing="false" text="Rugas Finas" />
                         <CheckBox fx:id="depilacao" layoutX="82.0" layoutY="186.0" mnemonicParsing="false" text="Depilação" />
-                        <CheckBox fx:id="telangiectacias" layoutX="387.0" layoutY="14.0" mnemonicParsing="false" text="Telangiectasias" />
+                        <CheckBox fx:id="telangiectacias" layoutX="387.0" layoutY="10.0" mnemonicParsing="false" text="Telangiectasias" />
                         <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="43.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@rugas.jpg" />
@@ -122,9 +126,9 @@
                               <Image url="@corpo.png" />
                            </image>
                         </ImageView>
-                        <Label layoutX="14.0" layoutY="130.0" text="Abdomem" />
-                        <Label layoutX="38.0" layoutY="46.0" text="Rosto" />
-                        <Label layoutX="40.0" layoutY="71.0" text="Peito" />
+                        <Label layoutX="6.0" layoutY="130.0" text="Abdomem" />
+                        <Label layoutX="33.0" layoutY="46.0" text="Rosto" />
+                        <Label layoutX="35.0" layoutY="71.0" text="Peito" />
                         <CheckBox fx:id="costas" layoutX="508.0" layoutY="79.0" mnemonicParsing="false" text="Costas" />
                         <Label layoutX="29.0" layoutY="227.0" text="Coxas" />
                         <Label layoutX="45.0" layoutY="335.0" text="Pé" />
